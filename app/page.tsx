@@ -1,7 +1,9 @@
+import Hero from "@/components/home/Hero";
+
 export default function Home() {
   return (
-    <main>
-      <h1>ByteSpace</h1>
+    <main className='min-h-screen bg-brand-blue'>
+      <Hero />
     </main>
   );
 }

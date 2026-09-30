@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { clashDisplay, poppins, satoshi } from "./fonts";
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
 
 export const metadata: Metadata = {
   title: "ByteSpace",
@@ -13,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body
+        className={`${satoshi.variable} ${poppins.variable} ${clashDisplay.variable}`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
