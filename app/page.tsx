@@ -1,4 +1,5 @@
 import Courses from "@/components/home/Courses";
+import CreatorCTA from "@/components/home/CreatorCTA";
 import Hero from "@/components/home/Hero";
 import LearningPaths from "@/components/home/LearningPaths";
 import ProfessionalGrowth from "@/components/home/ProfessionalGrowth";
@@ -12,6 +13,7 @@ export default function Home() {
       <Courses />
       <LearningPaths />
       <ProfessionalGrowth />
+      <CreatorCTA />
     </main>
   );
 }
