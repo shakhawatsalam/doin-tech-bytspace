@@ -3,6 +3,7 @@ import CreatorCTA from "@/components/home/CreatorCTA";
 import Hero from "@/components/home/Hero";
 import LearningPaths from "@/components/home/LearningPaths";
 import ProfessionalGrowth from "@/components/home/ProfessionalGrowth";
+import Testimonials from "@/components/home/Testimonials";
 import TrustedBrands from "@/components/home/TrustedBrands";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <LearningPaths />
       <ProfessionalGrowth />
       <CreatorCTA />
+      <Testimonials />
     </main>
   );
 }
