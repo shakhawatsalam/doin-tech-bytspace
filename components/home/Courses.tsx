@@ -32,7 +32,7 @@ const courses = [
 
 export default function Courses() {
   return (
-    <section id='courses' className='bg-white py-20 sm:py-24 lg:py-[120px]'>
+    <section id='courses' className='bg-white py-20 sm:py-24 lg:py-[50px]'>
       <Container>
         <SectionHeader
           title={

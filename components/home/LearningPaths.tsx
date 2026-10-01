@@ -4,27 +4,27 @@ import LearningPathCard from "@/components/home/LearningPathCard";
 
 const learningPaths = [
   {
-    image: "/assets/categories/design.png",
+    image: "/assets/categories/design.svg",
     title: "Design",
   },
   {
-    image: "/assets/categories/development.png",
+    image: "/assets/categories/development.svg",
     title: "Development",
   },
   {
-    image: "/assets/categories/it-software.png",
+    image: "/assets/categories/it-software.svg",
     title: "IT & Software",
   },
   {
-    image: "/assets/categories/business.png",
+    image: "/assets/categories/business.svg",
     title: "Business",
   },
   {
-    image: "/assets/categories/marketing.png",
+    image: "/assets/categories/marketing.svg",
     title: "Marketing",
   },
   {
-    image: "/assets/categories/photography.png",
+    image: "/assets/categories/photography.svg",
     title: "Photography",
   },
 ];

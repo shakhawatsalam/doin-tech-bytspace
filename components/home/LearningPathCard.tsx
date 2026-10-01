@@ -15,9 +15,9 @@ export default function LearningPathCard({
         <Image
           src={image}
           alt=''
-          width={30}
-          height={30}
-          className='h-[30px] w-[30px] object-contain'
+          width={60}
+          height={60}
+          className='h-[60px] w-[60px] object-contain'
         />
       </div>
 
