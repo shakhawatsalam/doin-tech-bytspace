@@ -29,7 +29,7 @@ const footerColumns = [
 export default function Footer() {
   return (
     <footer className='bg-white'>
-      <Container className='pt-16 sm:pt-20 lg:pt-[72px]'>
+      <Container className='pt-20 sm:pt-24 lg:pt-[90px]'>
         {/* Main footer */}
         <div className='grid gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-20'>
           {/* Newsletter */}
@@ -99,7 +99,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom divider */}
-        <div className='mt-32 border-t border-[#d5d5d5] py-8'>
+        <div className='mt-40 border-t border-[#d5d5d5] py-8'>
           <div className='flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between'>
             <p className='font-sans text-[16px] text-[#444444]'>
               @ 2023 ByteSpace. All rights reserved.

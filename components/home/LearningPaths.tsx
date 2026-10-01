@@ -31,7 +31,7 @@ const learningPaths = [
 
 export default function LearningPaths() {
   return (
-    <section className='bg-white py-24 sm:py-28 lg:py-[120px]'>
+    <section className='bg-white py-16 sm:py-20 lg:py-[80px]'>
       <Container>
         <SectionHeader
           size='small'
@@ -39,7 +39,7 @@ export default function LearningPaths() {
           description="At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories."
         />
 
-        <div className='mt-16 flex flex-wrap justify-center gap-6 lg:gap-8'>
+        <div className='mt-12 flex flex-wrap justify-center gap-6 lg:gap-8'>
           {learningPaths.map((path) => (
             <LearningPathCard
               key={path.title}

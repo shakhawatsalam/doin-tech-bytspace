@@ -3,7 +3,7 @@ import Container from "@/components/layout/Container";
 
 export default function CreatorCTA() {
   return (
-    <section className='relative min-h-[560px] overflow-hidden bg-brand-blue'>
+    <section className='relative min-h-[600px] overflow-hidden bg-brand-blue'>
       {/* Grid */}
       <div
         aria-hidden='true'
@@ -80,7 +80,7 @@ export default function CreatorCTA() {
             For Creators
           </p>
 
-          <h2 className='mt-5 font-display text-4xl font-semibold leading-[1.02] tracking-[-0.035em] text-white sm:text-5xl lg:text-[64px]'>
+          <h2 className='mt-5 font-display text-4xl font-semibold leading-[1.02] tracking-[-0.035em] text-white sm:text-5xl lg:text-[58px]'>
             Unlock Your Potential
             <br />
             as a Creator with ByteSpace

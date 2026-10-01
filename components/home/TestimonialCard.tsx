@@ -14,7 +14,7 @@ export default function TestimonialCard({
   quote,
 }: TestimonialCardProps) {
   return (
-    <article className='min-h-[205px] rounded-[14px] bg-white px-4 py-4 sm:px-5 sm:py-5'>
+    <article className='min-h-[225px] rounded-[14px] bg-white px-4 py-4 sm:px-6 sm:py-6'>
       <div className='flex items-center gap-3'>
         <Image
           src={image}

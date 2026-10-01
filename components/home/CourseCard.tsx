@@ -16,7 +16,7 @@ export default function CourseCard({
   return (
     <article className='group overflow-hidden rounded-2xl border border-[#e8e8e8] bg-white'>
       {/* Thumbnail */}
-      <div className='relative aspect-[16/9] overflow-hidden'>
+      <div className='relative aspect-[1.55/1] overflow-hidden'>
         <Image
           src={image}
           alt={title}

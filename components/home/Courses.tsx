@@ -47,7 +47,7 @@ export default function Courses() {
 
         <CategoryFilters />
 
-        <div className='mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
+        <div className='mx-auto mt-16 grid max-w-[1180px] gap-x-7 gap-y-8 md:grid-cols-2 lg:grid-cols-3'>
           {courses.map((course) => (
             <CourseCard
               key={course.image}

@@ -87,13 +87,13 @@ export default function ProfessionalGrowth() {
               className='absolute left-0 top-[30px] z-20 w-[210px]'
             />
 
-            {/* Person */}
+            {/* Person male*/}
             <Image
               src='/assets/hero/hero-person.png'
               alt=''
               width={722}
               height={515}
-              className='absolute bottom-[-10px] left-1/2 z-10 w-[500px] max-w-none -translate-x-1/2'
+              className='absolute bottom-[-10px] left-1/2 z-10 w-[540px] max-w-none -translate-x-1/2'
             />
 
             {/* Progress card */}
@@ -132,7 +132,7 @@ export default function ProfessionalGrowth() {
               alt='Creator'
               width={600}
               height={700}
-              className='absolute bottom-0 left-1/2 z-10 w-[430px] -translate-x-1/2'
+              className='absolute bottom-0 left-1/2 z-10 w-[460px] -translate-x-1/2'
             />
 
             {/* Revenue card */}
