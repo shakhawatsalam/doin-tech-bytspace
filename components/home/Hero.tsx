@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background Grid */}
       <div
         aria-hidden='true'
-        className='absolute inset-0 opacity-[0.18]'
+        className='absolute inset-0 opacity-[0.20]'
         style={{
           backgroundImage: `
             linear-gradient(
@@ -20,7 +20,7 @@ export default function Hero() {
               transparent 1px
             )
           `,
-          backgroundSize: "70px 70px",
+          backgroundSize: "85px 85px",
         }}
       />
 
@@ -30,58 +30,66 @@ export default function Hero() {
 
       {/* Left lime shape */}
       <Image
-        src='/assets/hero/hero-lime-shape.png'
+        src='/assets/hero/hero-lime-shape.svg'
         alt=''
-        width={266}
+        width={300}
         height={387}
         aria-hidden='true'
-        className='absolute left-0 top-[285px] z-[1] hidden md:block'
+        className='absolute left-0 top-[210px] z-1 hidden md:block'
       />
 
       {/* Left white squiggle */}
       <Image
-        src='/assets/decorative/white-squiggle-small.png'
+        src='/assets/decorative/white-squiggle-small.svg'
         alt=''
         width={177}
         height={176}
         aria-hidden='true'
         className='absolute left-[12%] top-[500px] z-[2] hidden lg:block'
       />
+      <Image
+        src='/assets/decorative/ring-cone.svg'
+        alt=''
+        width={342}
+        height={342}
+        aria-hidden='true'
+        className='absolute left-[12%] top-[682px] z-10 hidden lg:block'
+      />
 
       {/* Right lime cone/shape */}
       <Image
-        src='/assets/decorative/lime-cone.png'
+        src='/assets/decorative/lime-cone.svg'
         alt=''
         width={190}
         height={189}
         aria-hidden='true'
-        className='absolute right-[-15px] top-[230px] z-[1] hidden md:block'
+        className='absolute right-[12%] top-[500px] z-[1] hidden md:block'
       />
 
       {/* Right white cone */}
       <Image
-        src='/assets/decorative/white-cone-large.png'
+        src='/assets/decorative/white-cone-large.svg'
         alt=''
-        width={213}
+        width={250}
         height={372}
         aria-hidden='true'
-        className='absolute right-[9%] top-[485px] z-[2] hidden lg:block'
+        className='absolute right-0 top-[210px] z-1 hidden lg:block'
       />
 
       {/* Left white ring */}
-      <div
+      {/* <div
         aria-hidden='true'
         className='absolute bottom-[-40px] left-[4%] z-[2] hidden h-[215px] w-[215px] rounded-full border-[62px] border-white lg:block'
-      />
+      /> */}
 
       {/* Right white squiggle */}
       <Image
         src='/assets/decorative/white-squiggle-large.png'
         alt=''
-        width={317}
-        height={332}
+        width={330}
+        height={330}
         aria-hidden='true'
-        className='absolute bottom-[45px] right-[3%] z-[2] hidden w-[180px] lg:block xl:w-[220px]'
+        className='absolute bottom-[10px] right-[12%] z-10 hidden w-[180px] lg:block xl:w-[330px]'
       />
 
       {/* =========================
@@ -90,20 +98,16 @@ export default function Hero() {
 
       <Container className='relative z-10 pt-[155px]'>
         <div className='mx-auto flex max-w-[1000px] flex-col items-center text-center'>
-          {/* Eyebrow */}
-          <p className='font-poppins text-sm font-medium text-brand-lime'>
-            ByteSpace
-          </p>
 
           {/* Heading */}
-          <h1 className='mt-5 max-w-[900px] font-display text-5xl font-semibold leading-[0.98] tracking-[-0.035em] text-white sm:text-6xl md:text-7xl lg:text-[72px]'>
+          <h1 className='mt-5 max-w-[900px] font-poppins text-5xl font-semibold leading-[0.98] tracking-[-0.035em] text-white sm:text-6xl md:text-7xl lg:text-[72px]'>
             Get Access to Hundreds
             <br />
             of Courses Available
           </h1>
 
           {/* Description */}
-          <p className='mt-8 max-w-[760px] font-sans text-base leading-7 text-white/80 sm:text-lg'>
+          <p className='mt-8 max-w-[850px] font-sans text-base leading-7 text-white/80 sm:text-lg'>
             Unlock your creativity, gain valuable knowledge, and grow your
             business with our wide range of courses.
           </p>
@@ -166,17 +170,17 @@ export default function Hero() {
           width={1149}
           height={442}
           priority
-          className='absolute bottom-[-15px] left-1/2 w-[950px] max-w-none -translate-x-1/2 lg:w-[1100px] xl:w-[1149px]'
+          className='absolute bottom-[0px] left-1/2 w-[950px] max-w-none -translate-x-1/2 lg:w-[1100px] xl:w-[1149px]'
         />
 
         {/* Main Person */}
         <Image
           src='/assets/hero/hero-person.png'
           alt=''
-          width={722}
-          height={515}
+          width={578}
+          height={541}
           priority
-          className='absolute bottom-[-8px] left-1/2 z-[3] w-[520px] max-w-none -translate-x-1/2 lg:w-[650px] xl:w-[710px]'
+          className='absolute bottom-0 left-1/2 z-[3] w-[520px] max-w-none -translate-x-1/2 lg:w-[650px] xl:w-[710px]'
         />
 
         {/* UI/UX Course Card */}
@@ -185,7 +189,7 @@ export default function Hero() {
           alt=''
           width={208}
           height={70}
-          className='absolute bottom-[285px] left-[calc(50%-390px)] z-[6] w-[208px] lg:left-[calc(50%-470px)]'
+          className='absolute bottom-[300px] left-[calc(50%-390px)] z-[6] w-[208px] lg:left-[calc(50%-370px)]'
         />
 
         {/* Learning Progress Card */}
@@ -194,7 +198,7 @@ export default function Hero() {
           alt=''
           width={232}
           height={131}
-          className='absolute bottom-[210px] left-[calc(50%+75px)] z-[6] w-[232px] lg:left-[calc(50%+80px)]'
+          className='absolute bottom-[265px] left-[calc(50%+75px)] z-[6] w-[232px] lg:left-[calc(50%+80px)]'
         />
 
         {/* Happy Students Card */}
@@ -203,7 +207,7 @@ export default function Hero() {
           alt=''
           width={258}
           height={121}
-          className='absolute bottom-[35px] left-[calc(50%-530px)] z-[6] w-[258px] lg:left-[calc(50%-545px)]'
+          className='absolute bottom-[70px] left-[calc(50%-530px)] z-[6] w-[258px] lg:left-[calc(50%-420px)]'
         />
       </div>
 

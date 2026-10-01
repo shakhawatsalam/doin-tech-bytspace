@@ -24,8 +24,8 @@ export default function Navbar() {
 
   return (
     <header className='absolute inset-x-0 top-0 z-50'>
-      <div className='mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10'>
-        <nav className='flex h-[120px] items-center justify-between'>
+      <div className='mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10'>
+        <nav className='flex h-30 items-center justify-between'>
           {/* Logo */}
           <Link
             href='/'
