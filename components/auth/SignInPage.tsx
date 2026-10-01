@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function SignInPage() {
   return (
     <main className='relative min-h-screen overflow-hidden bg-brand-blue'>
-      {/* Background grid */}
+      {/* Background Grid */}
       <div
         aria-hidden='true'
         className='absolute inset-0 opacity-[0.2]'
@@ -27,10 +27,10 @@ export default function SignInPage() {
       />
 
       <div className='relative z-10 mx-auto grid min-h-screen max-w-[1500px] grid-cols-1 lg:grid-cols-[1fr_1fr]'>
-        {/* =========================================
+        {/* =========================
             LEFT SIDE
-        ========================================= */}
-        <div className='relative flex min-h-[650px] flex-col px-8 pb-16 pt-10 sm:px-12 lg:min-h-screen lg:px-16 xl:px-20'>
+        ========================= */}
+        <div className='relative flex min-h-[700px] flex-col px-8 pb-16 pt-10 sm:px-12 lg:min-h-screen lg:px-16 xl:px-20'>
           {/* Logo */}
           <Link
             href='/'
@@ -46,8 +46,8 @@ export default function SignInPage() {
           </Link>
 
           {/* Intro */}
-          <div className='mt-14 max-w-[550px]'>
-            <h1 className='font-display text-3xl font-semibold leading-[1.05] tracking-[-0.03em] text-white sm:text-4xl'>
+          <div className='mt-14 max-w-[560px]'>
+            <h1 className='font-poppins text-3xl font-semibold leading-[1.05] tracking-[-0.03em] text-white sm:text-4xl'>
               Sign in with ease
             </h1>
 
@@ -57,48 +57,59 @@ export default function SignInPage() {
             </p>
           </div>
 
-          {/* Course composition */}
-          <div className='relative mx-auto mt-16 h-[470px] w-full max-w-[580px] lg:absolute lg:bottom-[70px] lg:left-1/2 lg:mt-0 lg:-translate-x-1/2'>
-            {/* Back course card */}
-            <div className='absolute left-0 top-[90px] h-[390px] w-[300px] overflow-hidden rounded-[20px] bg-white'>
-              <Image
-                src='/assets/courses/digital-assets.png'
-                alt=''
-                fill
-                className='object-cover'
-              />
+          {/* =====================================================
+              COURSE VISUAL
+          ===================================================== */}
+          <div className='relative mx-auto mt-16 h-[500px] w-full max-w-[600px] lg:absolute lg:bottom-[55px] lg:left-1/2 lg:mt-0 lg:-translate-x-1/2'>
+            {/* -------------------------------------------------
+                BACK COURSE CARD
+            ------------------------------------------------- */}
+            <div className='absolute left-0 top-[95px] z-10 h-[390px] w-[300px] overflow-hidden rounded-[22px] bg-white shadow-xl'>
+              <div className='relative h-[225px] overflow-hidden rounded-t-[22px]'>
+                <Image
+                  src='/assets/courses/digital-assets.png'
+                  alt=''
+                  fill
+                  className='object-cover'
+                />
 
-              <div className='absolute inset-x-4 bottom-5'>
-                <span className='rounded-full bg-white px-4 py-2 font-poppins text-xs text-brand-dark'>
-                  17 Lessons
-                </span>
+                <div className='absolute bottom-5 left-4'>
+                  <span className='rounded-full bg-white/90 px-4 py-2 font-poppins text-xs text-brand-dark'>
+                    17 Lessons
+                  </span>
+                </div>
               </div>
 
-              <div className='absolute bottom-[-1px] left-4'>
-                <h3 className='font-display text-xl font-semibold text-brand-dark'>
-                  Build Digital Asset
-                </h3>
+              <div className='px-5 pt-5'>
+                <h2 className='font-display text-2xl font-semibold text-brand-dark'>
+                  Build Digital Assets
+                </h2>
 
-                <p className='mt-1 font-poppins text-xs text-brand-blue'>
-                  by purepearl studio
+                <p className='mt-1 font-poppins text-sm text-[#666]'>
+                  by <span className='text-brand-blue'>purepearl studio</span>
                 </p>
 
-                <div className='mt-4 rounded-full bg-[#f1f1f1] px-3 py-2 font-poppins text-xs'>
-                  Beginner
+                <div className='mt-5'>
+                  <span className='rounded-full bg-[#f1f1f1] px-4 py-2 font-poppins text-xs text-[#555]'>
+                    Beginner
+                  </span>
                 </div>
 
-                <p className='mt-5 font-poppins text-xl font-semibold text-brand-blue'>
+                <p className='mt-5 font-poppins text-2xl font-semibold text-brand-blue'>
                   $25
-                  <span className='text-xs font-normal text-[#666]'>
+                  <span className='text-sm font-normal text-[#666]'>
                     /lifetime
                   </span>
                 </p>
               </div>
             </div>
 
-            {/* Main course card */}
-            <div className='absolute left-[100px] top-0 z-10 w-[380px] overflow-hidden rounded-[22px] bg-white p-4 shadow-2xl'>
-              <div className='relative aspect-[1.65/1] overflow-hidden rounded-[14px]'>
+            {/* -------------------------------------------------
+                MAIN COURSE CARD
+            ------------------------------------------------- */}
+            <div className='absolute left-[95px] top-0 z-20 w-[385px] overflow-hidden rounded-[22px] bg-white p-4 shadow-2xl'>
+              {/* Thumbnail */}
+              <div className='relative aspect-[1.65/1] overflow-hidden rounded-[15px]'>
                 <Image
                   src='/assets/courses/big-data.png'
                   alt='The Power of Big Data'
@@ -106,99 +117,108 @@ export default function SignInPage() {
                   className='object-cover'
                 />
 
-                <div className='absolute bottom-3 left-3 flex gap-2'>
-                  <span className='rounded-full bg-white/90 px-3 py-2 font-poppins text-[10px]'>
+                {/* Course meta pills */}
+                <div className='absolute bottom-3 left-3 right-3 flex gap-2'>
+                  <span className='rounded-full bg-white/90 px-3 py-2 font-poppins text-[10px] text-[#555]'>
                     17 Lessons
                   </span>
 
-                  <span className='rounded-full bg-white/90 px-3 py-2 font-poppins text-[10px]'>
+                  <span className='rounded-full bg-white/90 px-3 py-2 font-poppins text-[10px] text-[#555]'>
                     2 hours 16 mins
                   </span>
 
-                  <span className='rounded-full bg-white/90 px-3 py-2 font-poppins text-[10px]'>
+                  <span className='rounded-full bg-white/90 px-3 py-2 font-poppins text-[10px] text-[#555]'>
                     59 Comments
                   </span>
                 </div>
               </div>
 
-              <div className='px-1 pb-2 pt-4'>
-                <div className='flex items-center justify-between gap-4'>
-                  <h2 className='font-display text-xl font-semibold text-brand-dark'>
+              {/* Course information */}
+              <div className='px-1 pb-2 pt-5'>
+                <div className='flex items-center justify-between gap-3'>
+                  <h2 className='font-display text-[24px] font-semibold leading-tight text-brand-dark'>
                     the Power of Big Data
                   </h2>
 
-                  <span className='shrink-0 font-poppins text-sm'>
-                    4.5 <span className='text-brand-lime'>★</span>
+                  <span className='shrink-0 font-poppins text-lg text-[#555]'>
+                    4.5 <span className='text-xl text-brand-lime'>★</span>
                   </span>
                 </div>
 
-                <p className='mt-2 font-poppins text-xs text-[#666]'>
+                <p className='mt-2 font-poppins text-sm text-[#666]'>
                   by <span className='text-brand-blue'>purepearl studio</span>
                 </p>
 
-                <div className='mt-4 flex items-center justify-between'>
-                  <span className='rounded-full bg-[#f1f1f1] px-3 py-2 font-poppins text-xs'>
+                <div className='mt-5 flex items-center justify-between'>
+                  <span className='rounded-full bg-[#f1f1f1] px-4 py-2 font-poppins text-xs text-[#555]'>
                     Beginner
                   </span>
 
-                  <div className='flex -space-x-2'>
-                    <div className='h-8 w-8 rounded-full border-2 border-white bg-[#bdbdbd]' />
-                    <div className='h-8 w-8 rounded-full border-2 border-white bg-[#8d8d8d]' />
-                    <div className='flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-black font-poppins text-[10px] text-white'>
+                  <div className='flex items-center -space-x-2'>
+                    <div className='h-9 w-9 rounded-full bg-[#777]' />
+                    <div className='h-9 w-9 rounded-full bg-[#aaa]' />
+                    <div className='h-9 w-9 rounded-full bg-[#e5b72f]' />
+                    <div className='h-9 w-9 rounded-full bg-[#8fa7bd]' />
+
+                    <span className='flex h-9 w-9 items-center justify-center rounded-full bg-black font-poppins text-xs text-white'>
                       26+
-                    </div>
+                    </span>
                   </div>
                 </div>
 
-                <p className='mt-5 font-poppins text-xl font-semibold text-brand-blue'>
+                <p className='mt-5 font-poppins text-2xl font-semibold text-brand-blue'>
                   $25
-                  <span className='text-xs font-normal text-[#666]'>
+                  <span className='text-sm font-normal text-[#666]'>
                     /lifetime
                   </span>
                 </p>
               </div>
             </div>
 
-            {/* Lime ring */}
+            {/* -------------------------------------------------
+                HERO COURSE CARD AS DECORATIVE FLOATING CARD
+            ------------------------------------------------- */}
+
+            {/* Lime Ring */}
             <div
               aria-hidden='true'
-              className='absolute left-[55px] top-[40px] z-20 h-[92px] w-[92px] rotate-[-12deg] rounded-full border-[30px] border-brand-lime'
+              className='absolute left-[45px] top-[42px] z-30 h-[100px] w-[100px] rotate-[-12deg] rounded-full border-[30px] border-brand-lime'
             />
 
-            {/* White squiggle */}
+            {/* White Squiggle */}
             <Image
               src='/assets/decorative/white-squiggle-small.png'
               alt=''
               width={177}
               height={176}
-              className='absolute bottom-[25px] right-[35px] z-30 w-[115px]'
+              className='absolute bottom-[55px] right-[15px] z-30 h-auto w-[125px]'
             />
 
-            {/* Happy students */}
+            {/* Happy Students */}
             <Image
               src='/assets/creators/happy-students-card.png'
               alt=''
               width={258}
               height={121}
-              className='absolute bottom-0 right-0 z-40 w-[265px]'
+              className='absolute bottom-[5px] right-[-10px] z-40 h-auto w-[265px]'
             />
 
-            {/* Lime cone */}
+            {/* Lime Cone */}
             <Image
               src='/assets/decorative/lime-cone.png'
               alt=''
               width={190}
               height={189}
-              className='absolute bottom-0 left-[-10px] z-30 w-[125px]'
+              className='absolute bottom-[-5px] left-[-20px] z-30 h-auto w-[135px]'
             />
           </div>
         </div>
 
-        {/* =========================================
+        {/* =========================
             RIGHT SIDE
-        ========================================= */}
-        <div className='flex items-center justify-center px-5 py-10 sm:px-10 lg:px-12 xl:px-16'>
-          <div className='w-full max-w-[590px] rounded-[28px] bg-white px-8 py-14 sm:px-12 sm:py-16 lg:min-h-[800px] lg:px-16 lg:py-[68px]'>
+        ========================= */}
+        <div className='flex items-center justify-center px-5 py-8 sm:px-10 lg:px-12 xl:px-16'>
+          <div className='w-full max-w-[590px] rounded-[28px] bg-white px-8 py-12 sm:px-12 sm:py-14 lg:min-h-[800px] lg:px-16 lg:py-[68px]'>
             <div className='flex h-full flex-col'>
               <div>
                 {/* Eyebrow */}
@@ -207,7 +227,7 @@ export default function SignInPage() {
                 </p>
 
                 {/* Heading */}
-                <h2 className='mt-3 font-display text-4xl font-semibold leading-[1.08] tracking-[-0.035em] text-brand-dark sm:text-5xl'>
+                <h2 className='mt-3 font-poppins text-4xl font-semibold leading-[1.08] tracking-[-0.035em] text-brand-dark sm:text-5xl'>
                   Welcome Back
                 </h2>
 
@@ -249,7 +269,7 @@ export default function SignInPage() {
                     />
                   </div>
 
-                  {/* Sign in */}
+                  {/* Sign In Button */}
                   <div className='flex justify-end pt-2'>
                     <button
                       type='submit'
@@ -268,7 +288,7 @@ export default function SignInPage() {
                   <div className='h-px flex-1 bg-[#d7d7d7]' />
                 </div>
 
-                {/* Social buttons */}
+                {/* Social Buttons */}
                 <div className='mt-10 flex justify-center gap-4'>
                   {/* Facebook */}
                   <button
@@ -297,7 +317,7 @@ export default function SignInPage() {
                 </div>
               </div>
 
-              {/* Create account */}
+              {/* Create Account */}
               <p className='mt-auto pt-16 text-center font-sans text-base text-[#777777]'>
                 New user?{" "}
                 <Link href='/join' className='text-brand-blue hover:underline'>
