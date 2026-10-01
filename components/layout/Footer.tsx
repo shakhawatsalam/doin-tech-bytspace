@@ -58,17 +58,17 @@ export default function Footer() {
             </p>
 
             {/* Newsletter form */}
-            <form className='mt-16 flex max-w-[720px] items-center gap-8'>
+            <form className='mt-10 flex max-w-[720px] flex-col items-stretch gap-3 sm:mt-16 sm:flex-row sm:items-center sm:gap-4'>
               <input
                 type='email'
                 placeholder='Enter your email'
                 aria-label='Email address'
-                className='h-[74px] min-w-0 flex-1 rounded-full border border-[#d2d2d2] bg-white px-8 font-sans text-[18px] text-brand-dark outline-none placeholder:text-[#444444] focus:border-brand-blue'
+                className='h-14 min-w-0 flex-1 rounded-full border border-[#d2d2d2] bg-white px-5 font-sans text-base text-brand-dark outline-none placeholder:text-[#444444] focus:border-brand-blue sm:h-[74px] sm:px-8 sm:text-[18px]'
               />
 
               <button
                 type='submit'
-                className='h-[66px] shrink-0 rounded-full bg-brand-lime px-9 font-sans text-[18px] font-medium text-brand-dark transition-transform hover:scale-[1.02]'>
+                className='h-14 shrink-0 rounded-full bg-brand-lime px-6 font-sans text-base font-medium text-brand-dark transition-transform hover:scale-[1.02] sm:h-[66px] sm:px-9 sm:text-[18px]'>
                 Search
               </button>
             </form>
@@ -82,7 +82,7 @@ export default function Footer() {
           {/* Navigation */}
           <nav
             aria-label='Footer navigation'
-            className='grid grid-cols-3 gap-8'>
+            className='grid min-w-0 grid-cols-2 gap-x-6 gap-y-7 sm:grid-cols-3 sm:gap-8'>
             {footerColumns.map((column, columnIndex) => (
               <div key={columnIndex} className='flex flex-col gap-7'>
                 {column.links.map((link) => (

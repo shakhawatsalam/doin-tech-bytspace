@@ -3,7 +3,7 @@ import Container from "@/components/layout/Container";
 
 export default function Hero() {
   return (
-    <section className='relative min-h-[1024px] overflow-hidden bg-brand-blue'>
+    <section className='relative min-h-[800px] overflow-hidden bg-brand-blue sm:min-h-[880px] lg:min-h-[1024px]'>
       {/* Background Grid */}
       <div
         aria-hidden='true'
@@ -35,7 +35,7 @@ export default function Hero() {
         width={300}
         height={387}
         aria-hidden='true'
-        className='absolute left-0 top-[210px] z-1 hidden md:block'
+        className='absolute left-0 top-[210px] z-1 hidden xl:block'
       />
 
       {/* Left white squiggle */}
@@ -53,7 +53,7 @@ export default function Hero() {
         width={342}
         height={342}
         aria-hidden='true'
-        className='absolute left-[12%] top-[682px] z-10 hidden lg:block'
+        className='absolute left-[12%] top-[682px] z-10 hidden 2xl:block'
       />
 
       {/* Right lime cone/shape */}
@@ -63,7 +63,7 @@ export default function Hero() {
         width={190}
         height={189}
         aria-hidden='true'
-        className='absolute right-[12%] top-[500px] z-[1] hidden md:block'
+        className='absolute right-[12%] top-[500px] z-[1] hidden lg:block'
       />
 
       {/* Right white cone */}
@@ -73,14 +73,8 @@ export default function Hero() {
         width={250}
         height={372}
         aria-hidden='true'
-        className='absolute right-0 top-[210px] z-1 hidden lg:block'
+        className='absolute right-0 top-[210px] z-1 hidden xl:block'
       />
-
-      {/* Left white ring */}
-      {/* <div
-        aria-hidden='true'
-        className='absolute bottom-[-40px] left-[4%] z-[2] hidden h-[215px] w-[215px] rounded-full border-[62px] border-white lg:block'
-      /> */}
 
       {/* Right white squiggle */}
       <Image
@@ -96,13 +90,12 @@ export default function Hero() {
           Hero Content
       ========================== */}
 
-      <Container className='relative z-10 pt-[155px]'>
+      <Container className='relative z-10 pt-[135px] md:pt-[155px]'>
         <div className='mx-auto flex max-w-[1000px] flex-col items-center text-center'>
-
           {/* Heading */}
-          <h1 className='mt-5 max-w-[900px] font-poppins text-5xl font-semibold leading-[0.98] tracking-[-0.035em] text-white sm:text-6xl md:text-7xl lg:text-[72px]'>
+          <h1 className='mt-5 max-w-[900px] font-poppins text-[clamp(2rem,8vw,3rem)] font-semibold leading-[0.98] tracking-normal text-white sm:text-5xl md:text-6xl lg:text-[72px]'>
             Get Access to Hundreds
-            <br />
+            <br className='hidden md:block' />
             of Courses Available
           </h1>
 
@@ -113,7 +106,7 @@ export default function Hero() {
           </p>
 
           {/* Search */}
-          <div className='mt-10 flex w-full max-w-[580px] items-center rounded-full bg-white p-2'>
+          <div className='lg:mt-10 mt-0 flex w-full max-w-[580px] items-center rounded-full bg-white p-2'>
             <div className='flex min-w-0 flex-1 items-center gap-3 px-5'>
               {/* Search icon */}
               <svg
@@ -149,7 +142,7 @@ export default function Hero() {
 
             <button
               type='button'
-              className='shrink-0 rounded-full bg-brand-lime px-7 py-3.5 font-poppins text-sm font-semibold text-brand-dark transition-transform hover:scale-[1.02]'>
+              className='shrink-0 rounded-full bg-brand-lime px-5 py-3.5 font-poppins text-sm font-semibold text-brand-dark transition-transform hover:scale-[1.02] sm:px-7'>
               Search
             </button>
           </div>
@@ -189,7 +182,7 @@ export default function Hero() {
           alt=''
           width={208}
           height={70}
-          className='absolute bottom-[300px] left-[calc(50%-390px)] z-[6] w-[208px] lg:left-[calc(50%-370px)]'
+          className='absolute bottom-[300px] left-[calc(50%-390px)] z-[6] hidden w-[208px] lg:block lg:left-[calc(50%-370px)]'
         />
 
         {/* Learning Progress Card */}
@@ -198,7 +191,7 @@ export default function Hero() {
           alt=''
           width={232}
           height={131}
-          className='absolute bottom-[265px] left-[calc(50%+75px)] z-[6] w-[232px] lg:left-[calc(50%+80px)]'
+          className='absolute bottom-[265px] left-[calc(50%+75px)] z-[6] hidden w-[232px] lg:block lg:left-[calc(50%+80px)]'
         />
 
         {/* Happy Students Card */}
@@ -207,7 +200,7 @@ export default function Hero() {
           alt=''
           width={258}
           height={121}
-          className='absolute bottom-[70px] left-[calc(50%-530px)] z-[6] w-[258px] lg:left-[calc(50%-420px)]'
+          className='absolute bottom-[70px] left-[calc(50%-530px)] z-[6] hidden w-[258px] lg:block lg:left-[calc(50%-420px)]'
         />
       </div>
 
@@ -220,7 +213,7 @@ export default function Hero() {
           alt=''
           width={1149}
           height={442}
-          className='absolute bottom-[-30px] left-1/2 w-[700px] max-w-none -translate-x-1/2'
+          className='absolute bottom-[-30px] left-1/2 w-full max-w-[700px] -translate-x-1/2'
         />
 
         <Image
@@ -228,7 +221,7 @@ export default function Hero() {
           alt=''
           width={722}
           height={515}
-          className='absolute bottom-[-5px] left-1/2 z-[3] w-[390px] max-w-none -translate-x-1/2'
+          className='absolute bottom-[-5px] left-1/2 z-[3] w-full max-w-[390px] -translate-x-1/2'
         />
       </div>
     </section>
