@@ -14,30 +14,30 @@ export default function ProfessionalGrowth() {
       {/* Background glow */}
       <div
         aria-hidden='true'
-        className='pointer-events-none absolute left-[-180px] top-[-120px] h-[520px] w-[520px] rounded-full bg-brand-lime/25 blur-[100px]'
+        className='pointer-events-none absolute left-[180px] top-[-120px] h-[520px] w-[900px] rounded-full bg-brand-lime/25 blur-[90px]'
       />
 
       <div
         aria-hidden='true'
-        className='pointer-events-none absolute right-[-180px] top-[-100px] h-[500px] w-[500px] rounded-full bg-[#dce3ff] blur-[100px]'
+        className='pointer-events-none absolute right-[-200px] top-[-100px] h-[500px] w-[500px] rounded-full bg-[#dce3ff] blur-[90px]'
       />
 
       <div
         aria-hidden='true'
-        className='pointer-events-none absolute bottom-[-180px] left-[5%] h-[450px] w-[450px] rounded-full bg-brand-lime/25 blur-[110px]'
+        className='pointer-events-none absolute bottom-[10px] -left-[10%] h-[550px] w-[550px] rounded-full bg-brand-lime/25 blur-[40px]'
       />
 
       <Container className='relative z-10'>
         <div className='grid items-center gap-16 lg:grid-cols-2 lg:gap-20'>
           {/* Left - Introduction */}
           <div className='max-w-[520px]'>
-            <h2 className='font-display text-4xl font-semibold leading-[1.08] tracking-[-0.03em] text-brand-dark sm:text-5xl'>
+            <h2 className='font-poppins text-3xl font-semibold leading-[1.08] tracking-[-0.02em] text-brand-dark sm:text-4xl'>
               Your Path to Professional
               <br />
               Growth Starts Here!
             </h2>
 
-            <p className='mt-7 max-w-[500px] font-sans text-[15px] leading-7 text-[#6f6f6f]'>
+            <p className='mt-7 max-w-[500px] font-sans text-base leading-7 text-[#6f6f6f]'>
               Explore our curated selection of courses tailored to enhance your
               capabilities and accelerate your career journey. Whether you are
               looking to sharpen specific skills, gain industry expertise, or
@@ -48,7 +48,7 @@ export default function ProfessionalGrowth() {
             {/* Statistics */}
             <div className='mt-10 flex flex-wrap items-start gap-10'>
               <div>
-                <p className='font-display text-2xl font-semibold text-brand-blue'>
+                <p className='font-poppins text-2xl font-semibold text-brand-blue'>
                   10K
                 </p>
                 <p className='mt-1 font-poppins text-xs text-[#777777]'>
@@ -57,7 +57,7 @@ export default function ProfessionalGrowth() {
               </div>
 
               <div>
-                <p className='font-display text-2xl font-semibold text-brand-blue'>
+                <p className='font-poppins text-2xl font-semibold text-brand-blue'>
                   70+
                 </p>
                 <p className='mt-1 font-poppins text-xs text-[#777777]'>
@@ -66,7 +66,7 @@ export default function ProfessionalGrowth() {
               </div>
 
               <div>
-                <p className='font-display text-2xl font-semibold text-brand-blue'>
+                <p className='font-poppins text-2xl font-semibold text-brand-blue'>
                   16
                 </p>
                 <p className='mt-1 font-poppins text-xs text-[#777777]'>
@@ -84,7 +84,7 @@ export default function ProfessionalGrowth() {
               alt=''
               width={208}
               height={70}
-              className='absolute left-0 top-[30px] z-20 w-[210px]'
+              className='absolute left-0 top-[30px] z-0 w-[250px] h-[250px] rounded-3xl overflow-clip'
             />
 
             {/* Person male*/}
@@ -93,7 +93,7 @@ export default function ProfessionalGrowth() {
               alt=''
               width={722}
               height={515}
-              className='absolute bottom-[-10px] left-1/2 z-10 w-[540px] max-w-none -translate-x-1/2'
+              className='absolute bottom-[-10px] left-1/2 z-10 w-[540px] max-w-none -translate-x-1/2 '
             />
 
             {/* Progress card */}
@@ -102,22 +102,22 @@ export default function ProfessionalGrowth() {
               alt=''
               width={232}
               height={131}
-              className='absolute right-[5px] top-[150px] z-30 w-[225px]'
+              className='absolute right-[5px] top-[150px] z-10 w-[225px] hidden lg:block'
             />
 
             {/* Decorative lime shape */}
             <Image
-              src='/assets/decorative/lime-cone.png'
+              src='/assets/decorative/lime-squiggle-large.svg'
               alt=''
-              width={190}
+              width={200}
               height={189}
-              className='absolute right-[-5px] top-[40px] z-0 w-[125px]'
+              className='absolute right-[-60px] top-[10px] z-20 w-[200px] h-[200px] hidden lg:block'
             />
           </div>
         </div>
 
         {/* Bottom row */}
-        <div className='mt-12 grid items-center gap-12 lg:grid-cols-2 lg:gap-20'>
+        <div className='lg:mt-24 mt-24 grid items-center gap-12 lg:grid-cols-2 lg:gap-20'>
           {/* Creator composition */}
           <div className='relative mx-auto h-[480px] w-full max-w-[500px]'>
             {/* Lime background */}
@@ -141,7 +141,7 @@ export default function ProfessionalGrowth() {
               alt=''
               width={190}
               height={90}
-              className='absolute left-0 top-[70px] z-20 w-[190px]'
+              className='absolute left-0 -top-[40px] z-0 w-[190px] hidden lg:block'
             />
 
             {/* Year-to-date card */}
@@ -150,7 +150,7 @@ export default function ProfessionalGrowth() {
               alt=''
               width={190}
               height={90}
-              className='absolute left-0 top-[170px] z-20 w-[190px]'
+              className='absolute left-0 top-[70px] z-0 w-[120px]'
             />
 
             {/* Students card */}
@@ -164,17 +164,17 @@ export default function ProfessionalGrowth() {
 
             {/* Decorative squiggle */}
             <Image
-              src='/assets/decorative/lime-cone.png'
+              src='/assets/decorative/lime-squiggle-large.svg'
               alt=''
-              width={190}
-              height={189}
-              className='absolute right-[15px] top-[130px] z-20 w-[90px]'
+              width={216}
+              height={216}
+              className='absolute right-[40px] -top-[10px] z-20 w-[216px] rotate-[40deg] hidden lg:block'
             />
           </div>
 
           {/* Creator content */}
           <div className='max-w-[500px]'>
-            <h2 className='font-display text-4xl font-semibold leading-[1.08] tracking-[-0.03em] text-brand-dark sm:text-5xl'>
+            <h2 className='font-poppins text-4xl font-semibold leading-[1.08] tracking-[-0.03em] text-brand-dark sm:text-5xl'>
               Create &amp; Manage
               <br />
               Courses Easily.
