@@ -14,28 +14,28 @@ export default function TestimonialCard({
   quote,
 }: TestimonialCardProps) {
   return (
-    <article className='min-h-[225px] rounded-[14px] bg-white px-4 py-4 sm:px-6 sm:py-6'>
-      <div className='flex items-center gap-3'>
+    <article className='min-h-[432px] rounded-[14px] bg-white px-4 py-4 sm:px-6 sm:py-6 shadow-sm'>
+      <div className='flex flex-col gap-3'>
         <Image
           src={image}
           alt={name}
-          width={48}
-          height={48}
-          className='h-12 w-12 rounded-full object-cover'
+          width={80}
+          height={80}
+          className='h-20 w-20 rounded-full object-cover'
         />
 
         <div>
-          <h3 className='font-poppins text-[13px] font-semibold text-brand-dark'>
+          <h3 className='font-poppins text-base font-semibold text-brand-dark'>
             {name}
           </h3>
 
-          <p className='mt-1 font-poppins text-[10px] font-medium text-brand-blue'>
+          <p className='mt-1 font-poppins text-base text-brand-blue'>
             {role}
           </p>
         </div>
       </div>
 
-      <p className='mt-5 font-sans text-[11px] leading-[1.65] text-[#666666]'>
+      <p className='mt-5 font-sans text-base leading-[1.80] text-[#666666]'>
         "{quote}"
       </p>
     </article>

@@ -28,23 +28,26 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className='relative overflow-hidden bg-gradient-to-br from-[#f9fbff] via-white to-[#eaff74] py-16 sm:py-20 lg:py-[72px]'>
+    <section className='relative overflow-hidden bg-background py-16 sm:py-20 lg:py-[72px]'>
       {/* Decorative top elements */}
       <div
         aria-hidden='true'
-        className='absolute left-[3%] top-0 h-[8px] w-[130px] bg-brand-blue'
+        className='pointer-events-none absolute left-[35%] top-[-20px] h-[520px] w-[700px] rounded-full bg-brand-lime/65 blur-[50px] '
       />
-
       <div
         aria-hidden='true'
-        className='absolute right-[10%] top-0 h-[70px] w-[90px] rounded-b-[30px] bg-brand-lime'
+        className='pointer-events-none absolute -right-[10%] top-[80px] h-[520px] w-[500px] rounded-full bg-brand-lime/65 blur-[50px]'
+      />
+      <div
+        aria-hidden='true'
+        className='pointer-events-none absolute -left-[10%] -bottom-[250px] h-[420px] w-[500px] rounded-full bg-brand-blue/50 blur-[90px]'
       />
 
       <Container className='relative z-10'>
         {/* Header */}
         <div className='grid items-start gap-8 lg:grid-cols-[1fr_1fr] lg:gap-16'>
           <div>
-            <h2 className='max-w-[500px] font-display text-[32px] font-semibold leading-[1.08] tracking-[-0.03em] text-brand-dark sm:text-[38px]'>
+            <h2 className='max-w-[500px] font-poppins text-[32px] font-semibold leading-[1.08] tracking-[-0.03em] text-brand-dark sm:text-[38px]'>
               Discover What Our
               <br />
               Community Is Saying
@@ -52,7 +55,7 @@ export default function Testimonials() {
           </div>
 
           <div className='lg:pt-1'>
-            <p className='max-w-[500px] font-sans text-[13px] leading-[1.7] text-[#666666]'>
+            <p className='max-w-[500px] font-sans text-base leading-[1.7] text-[#666666]'>
               At ByteSpace, our vibrant community of learners and creators is at
               the heart of what we do. Hear directly from those who have
               experienced the transformative journey of learning and creating on
@@ -63,7 +66,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials */}
-        <div className='mx-auto mt-10 grid max-w-[1080px] gap-5 md:grid-cols-3'>
+        <div className='mx-auto mt-10 grid gap-5 md:grid-cols-3'>
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.name} {...testimonial} />
           ))}
