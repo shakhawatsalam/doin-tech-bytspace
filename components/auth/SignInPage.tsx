@@ -38,7 +38,7 @@ export default function SignInPage() {
             aria-label='ByteSpace home'
             className='inline-flex w-fit'>
             <Image
-              src='/assets/brand/bytespace-icon.png'
+              src='/assets/brand/bytespace-icon.svg'
               alt='ByteSpace'
               width={42}
               height={42}
