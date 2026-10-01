@@ -27,7 +27,7 @@ export default function SectionHeader({
       )}
 
       <h2
-        className={`font-display font-semibold text-brand-dark ${titleClasses}`}>
+        className={`font-poppins font-medium text-brand-dark ${titleClasses}`}>
         {title}
       </h2>
 

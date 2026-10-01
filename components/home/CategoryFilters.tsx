@@ -36,10 +36,10 @@ export default function CategoryFilters() {
             key={category}
             type='button'
             onClick={() => setActiveCategory(category)}
-            className={`rounded-full px-5 py-3 font-poppins text-sm font-medium transition-colors ${
+            className={`rounded-full px-4 py-2 font-poppins text-sm font-medium transition-colors ${
               isActive
-                ? "bg-brand-lime text-brand-dark"
-                : "bg-[#f4f4f4] text-brand-dark hover:bg-[#e9e9e9]"
+                ? "bg-brand-lime text-brand-dark/70"
+                : "bg-[#f4f4f4] text-brand-dark/70 hover:bg-[#e9e9e9]"
             }`}>
             {category}
           </button>
@@ -48,7 +48,7 @@ export default function CategoryFilters() {
 
       <button
         type='button'
-        className='rounded-full bg-[#f4f4f4] px-5 py-3 font-poppins text-sm font-medium text-brand-dark transition-colors hover:bg-[#e9e9e9]'>
+        className='px-5 py-3 font-poppins text-sm font-medium text-brand-blue transition-colors'>
         + More
       </button>
     </div>

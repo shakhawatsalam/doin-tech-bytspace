@@ -38,7 +38,7 @@ export default function TrustedBrands() {
                 alt={`${brand.alt} ${index + 1}`}
                 width={170}
                 height={40}
-                className='h-auto max-h-8 w-auto object-contain opacity-80 grayscale'
+                className='h-auto max-h-10 w-auto object-contain opacity-80 grayscale'
               />
             </div>
           ))}
