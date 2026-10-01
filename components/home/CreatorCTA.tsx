@@ -26,22 +26,38 @@ export default function CreatorCTA() {
 
       {/* Left lime shape */}
       <Image
-        src='/assets/decorative/lime-cone.png'
+        src='/assets/decorative/lime-squiggle-large.svg'
         alt=''
         width={190}
         height={189}
         aria-hidden='true'
-        className='absolute left-[-45px] top-[70px] z-[1] hidden w-[170px] md:block'
+        className='absolute -left-[90px] -top-[50px] z-[1] hidden w-[300px] md:block rotate-[40deg]'
+      />
+      <Image
+        src='/assets/decorative/lime-cone.svg'
+        alt=''
+        width={190}
+        height={189}
+        aria-hidden='true'
+        className='absolute -left-[100px] bottom-0 z-[1] hidden w-[300px] md:block -rotate-12'
+      />
+      <Image
+        src='/assets/decorative/lime-circle.svg'
+        alt=''
+        width={190}
+        height={189}
+        aria-hidden='true'
+        className='absolute left-[170px] bottom-0 z-[1] hidden w-[300px] md:block'
       />
 
       {/* Top-right white cone */}
       <Image
-        src='/assets/decorative/white-cone.png'
+        src='/assets/decorative/white-cone.svg'
         alt=''
         width={140}
         height={190}
         aria-hidden='true'
-        className='absolute right-[7%] top-[-20px] z-[1] hidden w-[120px] lg:block'
+        className='absolute right-[7%] top-[50px] z-[1] hidden w-[180px] lg:block'
       />
 
       {/* Left white squiggle */}
@@ -51,36 +67,32 @@ export default function CreatorCTA() {
         width={177}
         height={176}
         aria-hidden='true'
-        className='absolute bottom-[80px] left-[12%] z-[1] hidden w-[130px] lg:block'
+        className='absolute top-[90px] left-[12%] z-[1] hidden w-[180px] lg:block'
       />
 
       {/* Right lime shape */}
       <Image
-        src='/assets/decorative/lime-cone.png'
+        src='/assets/decorative/white-sqr.svg'
         alt=''
         width={190}
         height={189}
         aria-hidden='true'
-        className='absolute bottom-[40px] right-[-30px] z-[1] hidden w-[180px] lg:block'
+        className='absolute top-[50px] right-[-30px] z-[1] hidden w-[180px] lg:block'
       />
 
       {/* Right white squiggle */}
       <Image
-        src='/assets/decorative/white-squiggle-large.png'
+        src='/assets/decorative/lime-squiggle-large.svg'
         alt=''
         width={317}
         height={332}
         aria-hidden='true'
-        className='absolute bottom-[-20px] right-[7%] z-[1] hidden w-[150px] lg:block'
+        className='absolute bottom-[-80px] right-[7%] z-[1] hidden w-[250px] lg:block'
       />
 
       <Container className='relative z-10 flex min-h-[560px] items-center justify-center'>
         <div className='mx-auto max-w-[760px] text-center'>
-          <p className='font-poppins text-sm font-medium text-brand-lime'>
-            For Creators
-          </p>
-
-          <h2 className='mt-5 font-display text-4xl font-semibold leading-[1.02] tracking-[-0.035em] text-white sm:text-5xl lg:text-[58px]'>
+          <h2 className='mt-5 font-poppins text-3xl font-semibold leading-[1.02] tracking-[-0.035em] text-white sm:text-5xl'>
             Unlock Your Potential
             <br />
             as a Creator with ByteSpace
