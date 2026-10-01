@@ -25,23 +25,23 @@ export default function Navbar() {
   return (
     <header className='absolute inset-x-0 top-0 z-50'>
       <div className='mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-10'>
-        <nav className='flex h-[88px] items-center justify-between'>
+        <nav className='flex h-[120px] items-center justify-between'>
           {/* Logo */}
           <Link
             href='/'
-            className='flex items-center gap-2'
+            className='flex gap-2 items-end'
             aria-label='ByteSpace home'>
             <Image
-              src='/assets/brand/bytespace-icon.png'
+              src='/assets/brand/bytespace-icon.svg'
               alt=''
-              width={28}
-              height={28}
+              width={29}
+              height={31}
               priority
             />
 
-            <span className='font-display text-xl font-semibold text-white'>
+            <p className='font-display text-[24px] font-semibold leading-none text-white'>
               ByteSpace
-            </span>
+            </p>
           </Link>
 
           {/* Desktop Navigation */}
@@ -50,7 +50,7 @@ export default function Navbar() {
               <Link
                 key={item.label}
                 href={item.href}
-                className='font-poppins text-sm font-medium text-white transition-colors hover:text-brand-lime'>
+                className='font-poppins text-base font-medium text-white transition-colors hover:text-brand-lime'>
                 {item.label}
               </Link>
             ))}
@@ -64,9 +64,14 @@ export default function Navbar() {
               Sign In
             </Link>
 
-            <Link
+            {/* <Link
               href='/join'
               className='rounded-full bg-brand-lime px-6 py-3 font-poppins text-sm font-semibold text-brand-dark transition-transform hover:scale-[1.03]'>
+              Join Us
+            </Link> */}
+            <Link
+              href='/join'
+              className='font-poppins text-sm font-medium text-white transition-colors hover:text-brand-lime'>
               Join Us
             </Link>
 
