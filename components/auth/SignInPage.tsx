@@ -58,16 +58,16 @@ export default function SignInPage() {
           </div>
 
           {/* =====================================================
-              COURSE VISUAL
+               COURSE VISUAL
           ===================================================== */}
           <div className='relative mx-auto mt-16 h-[500px] w-full max-w-[600px] lg:absolute lg:bottom-[55px] lg:left-1/2 lg:mt-0 lg:-translate-x-1/2'>
             {/* -------------------------------------------------
                 BACK COURSE CARD
             ------------------------------------------------- */}
-            <div className='absolute left-0 top-[95px] z-10 h-[390px] w-[300px] overflow-hidden rounded-[22px] bg-white shadow-xl'>
+            <div className='absolute left-0 top-[40px] z-10 h-[390px] w-[385px] overflow-hidden rounded-[22px] bg-white shadow-xl'>
               <div className='relative h-[225px] overflow-hidden rounded-t-[22px]'>
                 <Image
-                  src='/assets/courses/digital-assets.png'
+                  src='/assets/courses/startup.png'
                   alt=''
                   fill
                   className='object-cover'
@@ -107,11 +107,11 @@ export default function SignInPage() {
             {/* -------------------------------------------------
                 MAIN COURSE CARD
             ------------------------------------------------- */}
-            <div className='absolute left-[95px] top-0 z-20 w-[385px] overflow-hidden rounded-[22px] bg-white p-4 shadow-2xl'>
+            <div className='absolute left-[95px] -top-24 z-20 w-[385px] overflow-hidden rounded-[22px] bg-white p-4 shadow-2xl'>
               {/* Thumbnail */}
               <div className='relative aspect-[1.65/1] overflow-hidden rounded-[15px]'>
                 <Image
-                  src='/assets/courses/big-data.png'
+                  src='/assets/courses/money-management.png'
                   alt='The Power of Big Data'
                   fill
                   className='object-cover'
@@ -136,8 +136,8 @@ export default function SignInPage() {
               {/* Course information */}
               <div className='px-1 pb-2 pt-5'>
                 <div className='flex items-center justify-between gap-3'>
-                  <h2 className='font-display text-[24px] font-semibold leading-tight text-brand-dark'>
-                    the Power of Big Data
+                  <h2 className='font-poppins text-[24px] font-semibold leading-tight text-brand-dark'>
+                    The Power of Big Data
                   </h2>
 
                   <span className='shrink-0 font-poppins text-lg text-[#555]'>
@@ -180,9 +180,12 @@ export default function SignInPage() {
             ------------------------------------------------- */}
 
             {/* Lime Ring */}
-            <div
-              aria-hidden='true'
-              className='absolute left-[45px] top-[42px] z-30 h-[100px] w-[100px] rotate-[-12deg] rounded-full border-[30px] border-brand-lime'
+            <Image
+              src='/assets/decorative/lime-cer.svg'
+              alt=''
+              width={177}
+              height={176}
+              className='absolute top-[10px] left-[5px] z-30 h-auto w-[180px]'
             />
 
             {/* White Squiggle */}
@@ -191,25 +194,25 @@ export default function SignInPage() {
               alt=''
               width={177}
               height={176}
-              className='absolute bottom-[55px] right-[15px] z-30 h-auto w-[125px]'
+              className='absolute bottom-[55px] right-[15px] z-40 h-auto w-[180px]'
             />
 
             {/* Happy Students */}
             <Image
-              src='/assets/creators/happy-students-card.png'
+              src='/assets/decorative/happy-student-lime.png'
               alt=''
               width={258}
               height={121}
-              className='absolute bottom-[5px] right-[-10px] z-40 h-auto w-[265px]'
+              className='absolute bottom-[5px] right-[-10px] z-30 h-auto w-[265px]'
             />
 
             {/* Lime Cone */}
             <Image
-              src='/assets/decorative/lime-cone.png'
+              src='/assets/decorative/white-cone.svg'
               alt=''
               width={190}
               height={189}
-              className='absolute bottom-[-5px] left-[-20px] z-30 h-auto w-[135px]'
+              className='absolute -bottom-[70px] left-[-20px] z-30 h-auto w-[235px] rotate-12'
             />
           </div>
         </div>
