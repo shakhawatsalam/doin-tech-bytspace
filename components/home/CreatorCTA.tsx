@@ -3,7 +3,7 @@ import Container from "@/components/layout/Container";
 
 export default function CreatorCTA() {
   return (
-    <section className='relative min-h-[600px] overflow-hidden bg-brand-blue'>
+    <section className='relative min-h-[500px] overflow-hidden bg-brand-blue'>
       {/* Grid */}
       <div
         aria-hidden='true'

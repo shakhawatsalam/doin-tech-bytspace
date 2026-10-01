@@ -52,23 +52,23 @@ export default function Footer() {
               </span>
             </Link>
 
-            <p className='mt-7 font-sans text-[17px] leading-7 text-[#444444]'>
+            <p className='mt-4 font-sans text-[17px] leading-7 text-[#444444]'>
               Stay Up to date with our latest features and releases by joining
               our newsletter.
             </p>
 
             {/* Newsletter form */}
-            <form className='mt-10 flex max-w-[720px] flex-col items-stretch gap-3 sm:mt-16 sm:flex-row sm:items-center sm:gap-4'>
+            <form className='mt-5 flex max-w-[720px] flex-col items-stretch gap-3 sm:mt-16 sm:flex-row sm:items-center sm:gap-4'>
               <input
                 type='email'
                 placeholder='Enter your email'
                 aria-label='Email address'
-                className='h-14 min-w-0 flex-1 rounded-full border border-[#d2d2d2] bg-white px-5 font-sans text-base text-brand-dark outline-none placeholder:text-[#444444] focus:border-brand-blue sm:h-[74px] sm:px-8 sm:text-[18px]'
+                className='h-14 min-w-0 flex-1 rounded-full border border-[#d2d2d2] bg-white px-5 font-sans text-base text-brand-dark outline-none placeholder:text-[#444444] focus:border-brand-blue sm:h-[50px] sm:px-8 py-4 sm:text-[18px]'
               />
 
               <button
                 type='submit'
-                className='h-14 shrink-0 rounded-full bg-brand-lime px-6 font-sans text-base font-medium text-brand-dark transition-transform hover:scale-[1.02] sm:h-[66px] sm:px-9 sm:text-[18px]'>
+                className='h-14 shrink-0 rounded-full bg-brand-lime px-6 font-sans text-base font-medium text-brand-dark transition-transform hover:scale-[1.02] sm:h-[50px] sm:px-9 sm:text-[18px]'>
                 Search
               </button>
             </form>
@@ -89,7 +89,7 @@ export default function Footer() {
                   <Link
                     key={link}
                     href='#'
-                    className='font-sans text-[17px] leading-6 text-[#444444] transition-colors hover:text-brand-blue'>
+                    className='font-sans text-sm lg:text-base leading-3.5 text-[#444444] transition-colors hover:text-brand-blue'>
                     {link}
                   </Link>
                 ))}
@@ -99,7 +99,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom divider */}
-        <div className='mt-40 border-t border-[#d5d5d5] py-8'>
+        <div className='mt-20 border-t border-[#d5d5d5] py-8'>
           <div className='flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between'>
             <p className='font-sans text-[16px] text-[#444444]'>
               @ 2023 ByteSpace. All rights reserved.

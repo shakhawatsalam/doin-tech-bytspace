@@ -178,7 +178,7 @@ export default function Hero() {
 
         {/* UI/UX Course Card */}
         <Image
-          src='/assets/hero/hero-course-card.png'
+          src='/assets/hero/hero-course-card1.png'
           alt=''
           width={208}
           height={70}
